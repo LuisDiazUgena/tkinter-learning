@@ -12,7 +12,7 @@ class myButtons:
         self.printButton = Button(frame,text="Print something",command=self.printMessage)
         self.printButton.pack(side=LEFT)
 
-        self.quitButton = Button(frame,text="Quit",frame.quit) #Exit button with builtin exit function
+        self.quitButton = Button(frame,text="Quit",command=frame.quit) #Exit button with builtin exit function
         self.quitButton.pack(side=RIGHT)                       #frame.quit breaks the mainloop
 
     def printMessage(self):
